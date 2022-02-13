@@ -26,13 +26,7 @@ app.get('/api/:date', function (req, res) {
     fechaParam = parseInt(fechaParam);
   }
   //tipos de fechas
-  let fecha;
-  if (fechaParam) {
-    fecha = new Date(fechaParam);
-  } else {
-    fecha = new Date();
-  }
-
+  const fecha = new Date(fechaParam);
 
   if (!fecha.getTime()) {
     res.json({ error: "Invalid Date" });
@@ -46,13 +40,13 @@ app.get('/api/:date', function (req, res) {
 
 
 // api que devuelve la hora actual
-/* app.get("/api/", function (req, res) {
+app.get("/api/", function (req, res) {
   const fecha = new Date();
   res.json({
     unix: fecha.getTime(),
     utc: fecha.toUTCString()
   });
-}); */
+});
 
 
 app.listen(3000, function () {
