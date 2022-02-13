@@ -1,14 +1,24 @@
 {
-  "name": "proyectodate",
-  "version": "1.0.0",
-  "description": "Primer proyecto de freecodecamp",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Antonio Seguil Tamayo",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.2"
-  }
+	"name": "fcc-api-projects-boilerplate",
+	"version": "0.0.1",
+	"description": "An FCC Backend Challenge",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.12.4",
+		"cors": "^2.8.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://githost.com/camper/repo.git"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express",
+		"freecodecamp"
+	],
+	"license": "MIT"
 }
